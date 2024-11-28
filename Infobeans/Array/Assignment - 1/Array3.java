@@ -2,7 +2,7 @@ import java.util.Scanner;
 class 	Array3{
 	public static void main(String args[])
 	{
-		System.out.print("WAP to print sum of alternate nos of an integer array");
+		System.out.print("3. WAP to print Average of all array elements");
 		System.out.println();
 		Scanner s=new Scanner(System.in);
 		System.out.print("Enter number : ");

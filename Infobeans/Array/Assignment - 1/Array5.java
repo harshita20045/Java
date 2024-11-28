@@ -31,9 +31,9 @@ class Array5
 		int n=n1+n2;
 		int a[]=new int[n];
 		
-		
+		6
 			for(int i=0;i<n1;i++)
-			{
+			{+
 				a[i]=a1[i];		
 			}
 			for(int i=0;i<n2;i++)
