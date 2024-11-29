@@ -30,7 +30,7 @@ class Spiral1
 			System.out.println();
 		}
 		System.out.println("Spiral :");
-		while(value<n/2)
+		while(value<=n/2)
 		{
 			for(j=left;j<=right;j++)
 			{
