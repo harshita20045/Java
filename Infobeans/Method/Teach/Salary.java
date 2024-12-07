@@ -1,6 +1,6 @@
 //WAP to to accept employee detailts to process his payslip as 
 // Empid: Basic Salary : HRA(40% of basic salary): DA(20%): TA(10%): PF(12.5% of basic salary):
-// new salary = basic + HRA + DA + TA - PF0
+//new salary = basic + HRA + DA + TA - PF;
 import java.util.Scanner;
 class Salary
 {
