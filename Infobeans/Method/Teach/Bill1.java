@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Bill1{
     float qty, rate, amt, dis, net;
     int ino;
