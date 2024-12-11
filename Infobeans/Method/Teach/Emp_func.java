@@ -7,14 +7,12 @@ float getPF() to return PF as 12.5% of basic pay
 float getloan() to return loanInstallment as 2% of basic pay
 Instructions -  store all return values from data members and get Netpay in main function
 */
-
-
 import java.util.Scanner;
 class 	Emp_func
 {
 	int emp_id;
 	String emp_name;
-	int basic_Salary;
+	int basic_Salary;	
 	float hRA;
 	float dA;
 	float tA;
@@ -24,8 +22,9 @@ class 	Emp_func
 	void getEmp()
 	{
         Scanner s = new Scanner(System.in);
+		
         System.out.print("Enter Id No: ");
-        emp_id = s.nextInt();
+        emp_id = s.nextInt(); 
 		s.nextLine();
 		System.out.print("Enter name No: ");
         emp_name = s.nextLine();
@@ -33,6 +32,7 @@ class 	Emp_func
 		basic_Salary = s.nextInt();
        
 	}
+	
 	
 	float getHRA()
 	{
@@ -59,7 +59,7 @@ class 	Emp_func
 		loanInstallment=basic_Salary*(2.0f/100);
 		return loanInstallment;
 	}
-	
+
 	public static void main(String [] args)
 	{
 		Scanner sm = new Scanner(System.in);
@@ -67,9 +67,8 @@ class 	Emp_func
 			
 		sa.getEmp();
       float  new_salary = sa.basic_Salary + sa.getHRA() + sa.getDA() + sa.getTA() - sa.getPF()-sa.getloan();
-		System.out.println("Your payslip :  ");
-        
-		System.out.println(" -------------------------------------------------- ");
+		System.out.println("Your payslip :  ");       
+		System.out.println(" -------------------------------------------------------- ");
 		System.out.println("  Id of Employee   : "+sa.emp_id);
 		System.out.println("  Name of Employee   : "+sa.emp_name);
         System.out.println("  Basic Salary  : "+sa.basic_Salary);
@@ -79,7 +78,7 @@ class 	Emp_func
 		System.out.println("  Provident Fund minus        : "+sa.getPF());
 		System.out.println("  LoanInstallment        : "+sa.getloan());
 		System.out.println("  New Salary 				   : "+new_salary);
-		System.out.println(" -------------------------------------------------- ");
+		System.out.println(" --------------------------------------------------------- ");
 		
 	}
 }
