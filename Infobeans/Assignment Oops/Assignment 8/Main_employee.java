@@ -32,7 +32,7 @@ class EmployeeLevel extends Employee
 	{
        if(getSalary()>100)
 	   {
-		   return 1;
+		   return 1;                                                                                              
 	   }
 	   else
 	   {
