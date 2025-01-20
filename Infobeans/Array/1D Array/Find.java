@@ -34,4 +34,5 @@ class 	Find{
 		System.out.println();
 			
 	}
+	
 }

@@ -14,7 +14,6 @@ Explanation:
 Rithish orders a pizza with a base price of Rs. 9.5, a topping cost of Rs. 1.25, and selects 3 toppings. The price is calculated as 9.5 + (1.25 * 3) = 13.25. The regular and discounted prices are both Rs. 13.25, as no discount has been applied.
 
 Example 2
-
 Input:
 11.0
 2.0
@@ -52,4 +51,68 @@ Input 2 :
 7
 Output 2 :
 Price without discount: Rs.25.00
-Price with discount: Rs.2*/
+Price with discount: Rs.2
+*/
+import java.util.Scanner;
+
+class Pizza 
+{
+    double price, topping_cost;
+    int nt;
+
+    Pizza(double price, double topping_cost, int nt) 
+	{
+        this.price = price;
+        this.topping_cost = topping_cost;
+        this.nt = nt;
+    }
+
+    double calculatePrice() 
+	{
+        return price + (topping_cost * nt);
+    }
+}
+
+class DiscountedPizza extends Pizza 
+{
+    DiscountedPizza(double price, double topping_cost, int nt) 
+	{
+        super(price, topping_cost, nt);
+    }
+
+    double calculatePrice() 
+	{
+        double totalPrice = super.calculatePrice();
+        if (nt > 3) 
+		{
+            return totalPrice-totalPrice * (0.1); 
+        }
+		else 
+		{
+            return totalPrice; 
+        }
+    }
+}
+
+class Demo2 
+{
+    public static void main(String[] args) 
+	{
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter base price of pizza:");
+        double price = s.nextDouble();
+
+        System.out.print("Enter topping cost per item:");
+        double topping_cost = s.nextDouble();
+
+        System.out.print("Enter number of toppings:");
+        int nt = s.nextInt();
+        Pizza p1 = new Pizza(price, topping_cost, nt);
+        DiscountedPizza p2 = new DiscountedPizza(price, topping_cost, nt);
+		System.out.printf("Price without discount: Rs.%.2f%n", p1.calculatePrice());
+        System.out.printf("Price with discount: Rs.%.2f%n", p2.calculatePrice());
+
+    }
+}
+
