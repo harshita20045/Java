@@ -1,21 +1,20 @@
 package String3;
-
 import java.util.Scanner;
-
 public class Char_frequency {
 
 	public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a String : ");
+		String a = sc.nextLine();
 
-        for (int i = 0; i < input.length(); i++) {
-            char c = input.charAt(i);
-            int count = 0;
-            for (int j = 0; j < input.length(); j++) {
-                if (c == input.charAt(j)) count++;
-            }
-            System.out.println(c + " = " + count);
-        }
-    }
+		for (int i = 0; i < a.length(); i++) {
+			int count = 0;
+			for (int j = 0; j < a.length(); j++) {
+				if (a.charAt(i) == a.charAt(j)) {
+					count++;
+				}
+			}
+			System.out.println(a.charAt(i)+" : "+count);
+		}
+	}
 }
