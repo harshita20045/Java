@@ -42,13 +42,13 @@ class PaypalPayment extends Payment {
 
 public class PaymentMain {
     public static void main(String[] args) {
-        CreditCardPayment ccp = new CreditCardPayment(150.75, "TXN123", "1234-5678-9012-3456");
+        CreditCardPayment ccp = new CreditCardPayment(150.75, "123", "1234-5678-9012-3456");
         ccp.processPayment();
         ccp.displayDetails();
 
         System.out.println();
 
-        PaypalPayment ppp = new PaypalPayment(89.99, "TXN456", "user@example.com");
+        PaypalPayment ppp = new PaypalPayment(89.99, "456", "user@example.com");
         ppp.processPayment();
         ppp.displayDetails();
     }

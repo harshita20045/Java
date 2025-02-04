@@ -27,7 +27,7 @@ class WashingMachine extends Appliance {
 
 
     void operate() {
-        System.out.println("The washing machine is washing clothes.");
+        System.out.println("The "+brand+" washing machine is washing clothes.");
     }
 }
 
@@ -38,7 +38,7 @@ class Refrigerator extends Appliance {
 
  
     void operate() {
-        System.out.println("The refrigerator is cooling items.");
+        System.out.println("The "+brand +" refrigerator is cooling items.");
     }
 }
 
