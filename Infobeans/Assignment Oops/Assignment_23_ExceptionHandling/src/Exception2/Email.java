@@ -28,7 +28,7 @@ public class Email {
             if (!email.contains(".")) {
                 throw new DotException("DotException: Invalid Dot usage");
             }
-            if (!email.contains("@") || email.indexOf('@') != email.lastIndexOf('@')) {
+            if (!email.contains("@") ) {
                 throw new AtTheRateException("AtTheRateException: Invalid @ usage");
             }
             if (!(email.endsWith(".in") || email.endsWith(".com") || email.endsWith(".net") || email.endsWith(".biz"))) {
