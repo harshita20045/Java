@@ -31,4 +31,3 @@ public class User{
         f1.fourth(n);
     }
 }
-0
