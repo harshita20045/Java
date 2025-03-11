@@ -1,0 +1,4 @@
+welcome
+home
+100
+Bye

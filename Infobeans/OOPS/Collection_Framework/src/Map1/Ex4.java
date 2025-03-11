@@ -25,7 +25,8 @@ public class Ex4 {
 		System.out.println("Contain Key : " + tm.containsKey(-1));
 		System.out.println("Contain Values : " + tm.containsValue("RED"));
 		System.out.println("Size : " + tm.size());
-		System.out.println("Remove : " + tm.remove(-1));
+		System.out.println("Remove0"
+				+ " : " + tm.remove(-1));
 		System.out.println("Remove : " + tm.remove(0));
 
 		for (Map.Entry<Integer, String> x : tm.entrySet()) {
